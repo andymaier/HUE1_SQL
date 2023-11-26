@@ -1,10 +1,10 @@
+DROP TABLE IF EXISTS LocationTable;
 -- Create Location table
-CREATE TABLE Location (
+CREATE TABLE LocationTable (
+    locationID SERIAL PRIMARY KEY,
     street VARCHAR(255),
     houseNumber VARCHAR(255),
     postalCode VARCHAR(255),
     city VARCHAR(255),
-    country VARCHAR(255),
-    customerEmail VARCHAR(255),
-    FOREIGN KEY (customerEmail) REFERENCES Customer(email)
+    country VARCHAR(255)
 );
